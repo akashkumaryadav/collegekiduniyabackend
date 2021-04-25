@@ -15,6 +15,8 @@ const server = new ApolloServer({
   subscriptions: {
     path: "/subscriptions",
   },
+  playground: true,
+  introspection: true,
 });
 
 server.listen(port).then(({ url }) => {
